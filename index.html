@@ -9,83 +9,584 @@
     <meta name="description" content="This website has free HD-Wallpapers to download on mobbile , pc laptop etc">
     <link rel="shortcut icon" href="android-chrome-512x512.png" type="image">
     <title>Outfit-Wallpapers</title>
-   
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <style>
-    h1 {
-        text-align: center;
+    .img{
+        width: 50px;
     }
-
-    .mainbox {
+    .users{
         display: flex;
-
-
-
-        width: 1300px;
-        height: 600px;
-    }
-
-    .subbox {
-        display: inline-block;
-        border: 5px solid black;
-        width: 500px;
-        height: 500px;
-        margin: 30px;
-        padding: 30px;
+        width: 90vw;
         text-align: center;
-        font-size: xx-large;
-        color: white;
-    }
-    a{
-        text-decoration: none;
-        color: white;
-    }
-    #foot{text-align: center;
-        font-size: xx-large;
-
+        justify-content: center;
+       
     }
 
-    #box1 {
-        background: url(https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg) no-repeat center center/cover;
+    .hvr:hover{
+      background-color: black;
+      color: wheat;
+     
     }
 
-    #box2 {
-        background: url(https://kauveryhospital.com/blog/wp-content/uploads/2021/04/pizza-5179939_960_720.jpg) no-repeat center center/cover;
+    .text-lg {
+      color: gray
     }
+    
 
-    #box3 {
-        background: url(https://images.unsplash.com/photo-1578656415093-e7e19e5e132b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGxhbWJvcmdoaW5pfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60)no-repeat center center/cover;
-    }
-
-    #box4 {
-        background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBrGXrRsHGE301J-77QQPpyF_6hYl2_vcieQ&usqp=CAU)no-repeat center center/cover;
-    }
 </style>
-
 <body>
-    <header>
-        <h1>Welcome to Outfit-Wallpapers</h1>
-    </header>
-    <main>
-        <div class="mainbox">
-            <div class="subbox" id="box1">
-               <a href="/nature.html" target="_blank">Nature Wallpapers</a>
+
+    <header class="text-gray-600 body-font ">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <div class="img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1fK5tYPfi3uAlmFh_S2BGRK7ZOjUfPgl7ma67ALep4A&usqp=CAU&ec=48600113" alt="">
             </div>
-            <div class="subbox" id="box2">
-                <a href="/food.html" target="_blank">Food Wallpapers</a>
-            </div>
-            <div class="subbox" id="box3">
-                <a href="car.html" target="_blank">Car Wallpapers</a>
-            </div>
-            <div class="subbox" id="box4">
-                <a href="random.html" target="_blank">Random Wallpapers</a>
-            </div>
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">Outfit-Wallpapers</span>
+          </a>
+          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-gray-900" href="#">Home</a>
+            <a class="mr-5 hover:text-gray-900" href="#">About</a>
+            <a class="mr-5 hover:text-gray-900" href="#">Contact Us</a>
+           
+          </nav>
         </div>
-        <footer id="foot">
-            <p> <b>More Wallpapers comming soon...<b></p>
-        </footer>
-    </main>
+      </header>
 
+      <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Outfit-Wallpapers
+              <br class="hidden lg:inline-block">Wallpapers At Their Best
+            </h1>
+            <p class="mb-8 leading-relaxed">On this web page you will be able to find different types of Wallpapers. You can dowanload these Wallpapers for free! If you want to download any of these !</p>
+            <div class="flex justify-center">
+              <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+            </div>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img class="object-cover object-center rounded" alt="Wallpapers" src=https://source.unsplash.com/760x600/?Lamborgini>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+      
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap w-full mb-20">
+            <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Trending Wallpapers</h1>
+              <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+            </div>
+
+            <div class="users">
+            <section class="text-gray-600 body-font">
+                <div class="container px-5 py-24 mx-auto">
+                  <div class="flex flex-wrap -m-4 text-center">
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                      <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">12M</h2>
+                      <p class="leading-relaxed">Views</p>
+                    </div>
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                      <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">986K</h2>
+                      <p class="leading-relaxed">Likes</p>
+                    </div>
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                      <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">2.2M</h2>
+                      <p class="leading-relaxed">Downloads</p>
+                    </div>
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                      <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">8</h2>
+                      <p class="leading-relaxed">Products</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              </div>
+          </div>
+
+          
+          <div class="flex flex-wrap -m-4 ">
+            <div class="xl:w-1/4 md:w-1/2 p-4 ">
+              <div class="bg-gray-100 p-6 rounded-lg hvr">
+                <a href="/Automobile.html" target="_blank">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://image.cnbcfm.com/api/v1/image/101039516-Golden%20Lambo.jpg?v=1380725500" alt="content">
+                </a>
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Automobile Wallpapers</h2>
+                <p class="leading-relaxed text-base">This folder contains different types of Automobile wallpapers . Click to view</p>
+              </div>
+            </div>
+          
+
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg hvr" >
+                <a href="/food.html" target="_blank">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://kauveryhospital.com/blog/wp-content/uploads/2021/04/pizza-5179939_960_720.jpg" alt="content">
+                </a>
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Food Wallpapers</h2>
+                <p class="leading-relaxed text-base">This folder contains different types of Food wallpapers . Click to view</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg hvr">
+                <a href="/hd.html" target="_blank">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://wallpapers.com/images/featured/a5u9zq0a0ymy2dug.jpg" alt="content">
+                </a>
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">HD Wallpapers</h2>
+                <p class="leading-relaxed text-base">This folder contains HD wallpapers . Click to view</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg hvr">
+                <a href="/Nature.html" target="_blank">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://wallpapers.com/images/hd/4k-nature-at-golden-hour-5281oz5sljar0zfm.jpg" alt="content">
+                </a>
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Nature Wallpapers</h2>
+                <p class="leading-relaxed text-base">This folder contains Natue related wallpapers . Click to view</p>
+              </div>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                  <div class="bg-gray-100 p-6 rounded-lg hvr">
+                    <a href="/technology.html" target="_blank">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://wallpaperaccess.com/full/829012.jpg" alt="content">
+                    </a>
+                    <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Technology Wallpapers</h2>
+                    <p class="leading-relaxed text-base">This folder contains Technology wallpapers . Click to view</p>
+                  </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                  <div class="bg-gray-100 p-6 rounded-lg hvr">
+                    <a href="/archi.html" target="_blank">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://wallpapercave.com/wp/wp1851483.jpg" alt="content">
+                    </a>
+                    <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Architecture Wallpapers</h2>
+                    <p class="leading-relaxed text-base">This folder contains Architecture wallpapers . Click to view</p>
+                  </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                  <div class="bg-gray-100 p-6 rounded-lg hvr">
+                    <a href="/Nature.html" target="_blank">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://i.pinimg.com/originals/06/db/c4/06dbc4c13455da7b2cb69bf1192f8786.jpg" alt="content">
+                    </a>
+                    <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Friction Wallpapers</h2>
+                    <p class="leading-relaxed text-base">This folder contains Friction wallpapers . Click to view</p>
+                  </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                  <div class="bg-gray-100 p-6 rounded-lg hvr">
+                    <a href="/hd.html" target="_blank">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://wallpaperaccess.com/full/1201126.jpg" alt="content">
+                    </a>
+                    <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Sports</h2>
+                    <p class="leading-relaxed text-base">This folder contains different types of sports wallpapers . Click to view</p>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap w-full mb-20">
+            <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Recently Added</h1>
+              <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+            </div>
+
+            <div class="users">
+            <section class="text-gray-600 body-font">
+                <div class="container px-5 py-24 mx-auto">
+                  <div class="flex flex-wrap -m-4 text-center">
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                      <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">3.7M</h2>
+                      <p class="leading-relaxed">Views</p>
+                    </div>
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                      <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">460K</h2>
+                      <p class="leading-relaxed">Likes</p>
+                    </div>
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                      <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">956K</h2>
+                      <p class="leading-relaxed">Downloads</p>
+                    </div>
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                      <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">7</h2>
+                      <p class="leading-relaxed">Products</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+
+           
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg hvr">
+                <a href="Nature.html" target="_blank">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg" alt="content">
+                </a>
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Mountains</h2>
+                <p class="leading-relaxed text-base">This folder contains Mountains wallpapers . Click to view</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg hvr">
+                <a href="Nature.html" target="_blank">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Walking_tiger_female.jpg" alt="content">
+                </a>
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Animals</h2>
+                <p class="leading-relaxed text-base">This folder contains Animals wallpapers . Click to view</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg hvr">
+                <a href="archi.html" target="_blank">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://wallpapers.com/images/featured/nepi2tnxp6g0mvz9.jpg" alt="content">
+                </a>
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Gaming</h2>
+                <p class="leading-relaxed text-base">This folder contains Gaming wallpapers . Click to view</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg hvr">
+                <a href="Nature.html" target="_blank">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://webneel.com/wallpaper/sites/default/files/images/01-2014/24-flower-wallpaper.jpg" alt="content">
+                </a>
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Flower</h2>
+                <p class="leading-relaxed text-base">This folder contains Flower wallpapers . Click to view</p>
+              </div>
+            </div>
+            </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg hvr">
+                <a href="baground.html" target="_blank">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://images4.alphacoders.com/113/113154.jpg" alt="content">
+                </a>
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Colour</h2>
+                <p class="leading-relaxed text-base">This folder contains Colour wallpapers . Click to view</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg hvr">
+                <a href="technology.html" target="_blank">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://img.freepik.com/premium-photo/fairy-magical-portal-fantasy-forest-digital-painting-scenery_743201-1.jpg" alt="content">
+                </a>
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Fantasy</h2>
+                <p class="leading-relaxed text-base">This folder contains Fantasy wallpapers . Click to view</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap w-full mb-20">
+            <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Backgrounds</h1>
+              <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+            </div>
+            <div class="users">
+
+            <section class="text-gray-600 body-font">
+                <div class="container px-5 py-24 mx-auto">
+                  <div class="flex flex-wrap -m-4 text-center">
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                      <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">980K</h2>
+                      <p class="leading-relaxed">Views</p>
+                    </div>
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                      <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">235K</h2>
+                      <p class="leading-relaxed">Likes</p>
+                    </div>
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                      <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">701K</h2>
+                      <p class="leading-relaxed">Downloads</p>
+                    </div>
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                      <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">9</h2>
+                      <p class="leading-relaxed">Products</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg hvr">
+                <a href="baground.html" target="_blank">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://coolbackgrounds.io/images/backgrounds/index/sea-edge-79ab30e2.png" alt="content">
+                </a>
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Cool Backgrounds</h2>
+                <p class="leading-relaxed text-base">This folder contains Cool Backgrounds . Click to view</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg hvr">
+                <a href="baground.html" target="_blank">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://img.freepik.com/free-photo/abstract-fire-desktop-wallpaper-realistic-blazing-flame-image_53876-147448.jpg" alt="content">
+                </a>
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Fire Backgrounds</h2>
+                <p class="leading-relaxed text-base">This folder contains Fire Backgrounds . Click to view</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg hvr">
+                <a href="baground.html" target="_blank">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://wallpapers.com/images/featured/ottxzua7t54e3vfb.jpg" alt="content">
+                </a>
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Ice Backgrounds</h2>
+                <p class="leading-relaxed text-base">This folder contains Ice Backgrounds . Click to view</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg hvr">
+                <a href="baground.html" target="_blank">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://img.freepik.com/free-photo/white-cloud-blue-sky_74190-7709.jpg?w=360" alt="content">
+                </a>
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Sky Backgrounds</h2>
+                <p class="leading-relaxed text-base">This folder contains Sky Backgrounds . Click to view</p>
+              </div>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                  <div class="bg-gray-100 p-6 rounded-lg hvr">
+                    <a href="baground.html" target="_blank">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://wallpaperaccess.com/full/1201126.jpg" alt="content">
+                    </a>
+                    <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Hexagon Backgrounds</h2>
+                    <p class="leading-relaxed text-base">This folder contains Hexagon Backgrounds . Click to view</p>
+                  </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                  <div class="bg-gray-100 p-6 rounded-lg hvr">
+                    <a href="baground.html" target="_blank">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://img.freepik.com/free-vector/realistic-blurred-spring-background_52683-57041.jpg?w=360" alt="content">
+                    </a>
+                    <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Flower Backgrounds</h2>
+                    <p class="leading-relaxed text-base">This folder contains Flower Backgrounds . Click to view</p>
+                  </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                  <div class="bg-gray-100 p-6 rounded-lg hvr">
+                    <a href="baground.html" target="_blank">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://yt3.googleusercontent.com/584JjRp5QMuKbyduM_2k5RlXFqHJtQ0qLIPZpwbUjMJmgzZngHcam5JMuZQxyzGMV5ljwJRl0Q=s900-c-k-c0x00ffffff-no-rj" alt="content">
+                    </a>
+                    <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Youtube Backgrounds</h2>
+                    <p class="leading-relaxed text-base">This folder contains Backgrounds for Youtube. Click to view</p>
+                  </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                  <div class="bg-gray-100 p-6 rounded-lg hvr">
+                    <a href="baground.html" target="_blank">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://i.pinimg.com/originals/07/96/33/07963383d23386f223dd7e5a58f2d93c.jpg" alt="content">
+                    </a>
+                    <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Party Backgrounds</h2>
+                    <p class="leading-relaxed text-base">This folder contains Party  Backgrounds . Click to view</p>
+                  </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg hvr">
+                      <a href="baground.html" target="_blank">
+                      <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://static.vecteezy.com/system/resources/previews/001/849/553/original/modern-gold-background-free-vector.jpg" alt="content">
+                      </a>
+                      <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                      <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Legendary Backgrounds</h2>
+                      <p class="leading-relaxed text-base">This folder contains Legendary Backgrounds . Click to view</p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap w-full mb-20">
+            <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Premium Wallpapers</h1>
+              <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+            </div>
+
+            <div class="users">
+            <section class="text-gray-600 body-font">
+                <div class="container px-5 py-24 mx-auto">
+                  <div class="flex flex-wrap -m-4 text-center">
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                      <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">4.5M</h2>
+                      <p class="leading-relaxed">Views</p>
+                    </div>
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                      <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">640K</h2>
+                      <p class="leading-relaxed">Likes</p>
+                    </div>
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                      <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">76K</h2>
+                      <p class="leading-relaxed">Downloads</p>
+                    </div>
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                      <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">1</h2>
+                      <p class="leading-relaxed">Products</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg hvr">
+                <a href="Automobile.html" target="_blank">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://i-invdn-com.investing.com/news/gold3_800x533_L_1412152987.jpg" alt="content">
+                </a>
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Premium Wallpapers</h2>
+                <p class="leading-relaxed text-base">This folder contains Premium Wallpapers . Click to view</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+          <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+              <div class="img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1fK5tYPfi3uAlmFh_S2BGRK7ZOjUfPgl7ma67ALep4A&usqp=CAU&ec=48600113" alt="">
+            </div>
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+              <span class="ml-3 text-xl">Outfit-Wallpapers</span>
+            </a>
+            <p class="mt-2 text-sm text-gray-500">Find more about us Here!</p>
+          </div>
+          <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Search</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Home</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">About</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Contact</a>
+                </li>
+              </nav>
+            </div>
+          
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Trending wallpaper</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a href="Automobile.html" class="text-gray-600 hover:text-gray-800">Automobile</a>
+                </li>
+                <li>
+                  <a href="hd.html" class="text-gray-600 hover:text-gray-800">HD Wallpapers</a>
+                </li>
+                <li>
+                  <a href="Nature.html" class="text-gray-600 hover:text-gray-800">Nature</a>
+                </li>
+                <li>
+                  <a href="food.html" class="text-gray-600 hover:text-gray-800">Food</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Recent wallpaper</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a href="archi.html" class="text-gray-600 hover:text-gray-800">Architecture</a>
+                </li>
+                <li>
+                  <a href="Nature.html" class="text-gray-600 hover:text-gray-800">Friction</a>
+                </li>
+                <li>
+                  <a href="" class="text-gray-600 hover:text-gray-800">Bagrounds</a>
+                </li>
+                <li>
+                  <a href="Automobile.html" class="text-gray-600 hover:text-gray-800">Premium</a>
+                </li>
+              </nav>
+            </div>
+           
+          </div>
+        </div>
+        <div class="bg-gray-100">
+          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Outfit-Wallpapers —
+              <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@Outfit-X</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </footer>
 </body>
-
 </html>
