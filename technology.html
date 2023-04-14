@@ -2,217 +2,149 @@
 
 <html>
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
+	<title>Matrix Calculator</title>
 
-    <title>LED Light</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 
-    <link rel="stylesheet" href="style.css">
+</head>
 
-  </head>
-    <style>
-      body {
+<body>
 
-  font-family: Arial, sans-serif;
+	<div class="calculator">
 
-  margin: 0;
+		<div class="input">
 
-  padding: 0;
+			<h2>Matrix 1</h2>
 
-}
+			<table id="matrix1">
 
-header {
+				<tr>
 
-  background-color: #333;
+					<td><input type="number" id="m11"></td>
 
-  color: #fff;
+					<td><input type="number" id="m12"></td>
 
-  padding: 20px;
+					<td><input type="number" id="m13"></td>
 
-}
+				</tr>
 
-h1 {
+				<tr>
 
-  margin: 0;
+					<td><input type="number" id="m21"></td>
 
-}
+					<td><input type="number" id="m22"></td>
 
-main {
+					<td><input type="number" id="m23"></td>
 
-  max-width: 960px;
+				</tr>
 
-  margin: 0 auto;
+				<tr>
 
-  padding: 20px;
+					<td><input type="number" id="m31"></td>
 
-}
+					<td><input type="number" id="m32"></td>
 
-.features {
+					<td><input type="number" id="m33"></td>
 
-  margin-bottom: 40px;
+				</tr>
 
-}
+			</table>
 
-h2 {
+			<h2>Matrix 2</h2>
 
-  font-size: 32px;
+			<table id="matrix2">
 
-  margin-bottom: 20px;
+				<tr>
 
-}
+					<td><input type="number" id="n11"></td>
 
-ul {
+					<td><input type="number" id="n12"></td>
 
-  list-style: none;
+					<td><input type="number" id="n13"></td>
 
-  margin: 0;
+				</tr>
 
-  padding: 0;
+				<tr>
 
-}
+					<td><input type="number" id="n21"></td>
 
-li {
+						<td><input type="number" id="n22"></td>
 
-  margin-bottom: 10px;
+						<td><input type="number" id="n23"></td>
 
-}
+				</tr>
 
-.product {
+				<tr>
 
-  display: flex;
+					<td><input type="number" id="n31"></td>
 
-  flex-wrap: wrap;
+						<td><input type="number" id="n32"></td>
 
-  justify-content: space-between;
+						<td><input type="number" id="n33"></td>
 
-  align-items: center;
+				</tr>
 
-}
+			</table>
 
-img {
+			<button onclick="add()">Add</button>
 
-  max-width: 50%;
+			<button onclick="subtract()">Subtract</button>
 
-}
+			<button onclick="multiply()">Multiply</button>
 
-p {
+			<button onclick="inverse()">Inverse</button>
 
-  font-size: 18px;
+			<button onclick="clearInputs()">Clear</button>
 
-  max-width: 40%;
+		</div>
 
-}
+		<div class="output">
 
-button {
+			<h2>Result</h2>
 
-  background-color: #333;
+			<table id="result">
 
-  color: #fff;
+				<tr>
 
-  border: none;
+					<td id="r11"></td>
 
-  border-radius: 4px;
+					<td id="r12"></td>
 
-  padding: 10px 20px;
+					<td id="r13"></td>
 
-  font-size: 18px;
+				</tr>
 
-  cursor: pointer;
+				<tr>
 
-}
+					<td id="r21"></td>
 
-footer {
+					<td id="r22"></td>
 
-  background-color: #333;
+					<td id="r23"></td>
 
-  color: #fff;
+				</tr>
 
-  padding: 20px;
+				<tr>
 
-  text-align: center;
+					<td id="r31"></td>
 
-}
-      </style>
-        
-        
+					<td id="r32"></td>
 
-  <body>
+					<td id="r33"></td>
 
-    <header>
+				</tr>
 
-      <h1>LED Light</h1>
+			</table>
 
-    </header>
+		</div>
 
-    <main>
+	</div>
 
-      <section class="features">
+	<script src="script.js"></script>
 
-        <h2>Features</h2>
-
-        <ul>
-
-          <li>Energy efficient</li>
-
-          <li>Long lifespan</li>
-
-          <li>Instant lighting</li>
-
-        </ul>
-
-      </section>
-
-      <section class="product">
-
-        <h2>Product</h2>
-
-        <img src="led-light.jpg" alt="LED light">
-
-        <p>The LED light is a high-quality, energy-efficient lighting solution. It is perfect for home, office, or commercial use.</p>
-
-        <button>Buy now</button>
-
-      </section>
-
-    </main>
-
-    <footer>
-
-      <p>&copy; 2023 LED Light. All rights reserved.</p>
-
-    </footer>
-
-  </body>
-  <script>
-    const button = document.querySelector('button');
-
-const image = document.querySelector('img');
-
-let isOn = false;
-
-button.addEventListener('click', () => {
-
-  if (isOn) {
-
-    image.src = 'led-off.jpg';
-
-    button.innerText = 'Turn on';
-
-  } else {
-
-    image.src = 'led-on.jpg';
-
-    button.innerText = 'Turn off';
-
-  }
-
-  
-
-  isOn = !isOn;
-
-});
-    
-    </script>
+</body>
 
 </html>
+
