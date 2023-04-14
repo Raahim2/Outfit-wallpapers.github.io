@@ -1,5 +1,431 @@
-hi 
 
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Matrix Calculator</title></head>
+
+<style>
+
+body {
+
+	margin: 0;
+
+	padding: 0;
+
+	background-color: #f2f2f2;
+
+}
+
+.calculator {
+
+	margin: 100px auto;
+
+	width: 600px;
+
+	border: 1px solid #
+
+}
+
+.input {
+
+float: left;
+
+width: 50%;
+
+padding: 20px;
+
+box-sizing: border-box;
+
+}
+
+.output {
+
+float: right;
+
+width: 50%;
+
+padding: 20px;
+
+box-sizing: border-box;
+
+}
+
+table {
+
+border-collapse: collapse;
+
+margin-bottom: 20px;
+
+}
+
+table td {
+
+padding: 10px;
+
+text-align: center;
+
+border: 1px solid #ccc;
+
+}
+
+button {
+
+display: block;
+
+margin: 20px 0;
+
+padding: 10px;
+
+width: 100%;
+
+background-color: #4CAF50;
+
+color: #fff;
+
+border: none;
+
+cursor: pointer;
+
+}
+
+button:hover {
+
+background-color: #3e8e41;
+
+}
+
+#result td {
+
+font-weight: bold;
+
+}
+
+.error-message {
+
+color: red;
+
+font-weight: bold;
+
+margin-top: 10px;
+
+}
+
+.hide {
+
+display: none;
+
+}
+
+</style>
+
+<body>
+
+	<div class="calculator">
+
+		<div class="input">
+
+			<h2>Matrix 1</h2>
+
+			<table id="matrix1">
+
+				<tr>
+
+					<td><input type="number" id="m11"></td>
+
+					<td><input type="number" id="m12"></td>
+
+					<td><input type="number" id="m13"></td>
+
+				</tr>
+
+				<tr>
+
+					<td><input type="number" id="m21"></td>
+
+					<td><input type="number" id="m22"></td>
+
+					<td><input type="number" id="m23"></td>
+
+				</tr>
+
+				<tr>
+
+					<td><input type="number" id="m31"></td>
+
+					<td><input type="number" id="m32"></td>
+
+					<td><input type="number" id="m33"></td>
+
+				</tr>
+
+			</table>
+
+			<h2>Matrix 2</h2>
+
+			<table id="matrix2">
+
+				<tr>
+
+					<td><input type="number" id="n11"></td>
+
+					<td><input type="number" id="n12"></td>
+
+					<td><input type="number" id="n13"></td>
+
+				</tr>
+
+				<tr>
+
+					<td><input type="number" id="n21"></td>
+
+						<td><input type="number" id="n22"></td>
+
+						<td><input type="number" id="n23"></td>
+
+				</tr>
+
+				<tr>
+
+					<td><input type="number" id="n31"></td>
+
+						<td><input type="number" id="n32"></td>
+
+						<td><input type="number" id="n33"></td>
+
+				</tr>
+
+			</table>
+
+			<button onclick="add()">Add</button>
+
+			<button onclick="subtract()">Subtract</button>
+
+			<button onclick="multiply()">Multiply</button>
+
+			<button onclick="inverse()">Inverse</button>
+
+			<button onclick="clearInputs()">Clear</button>
+
+		</div>
+
+		<div class="output">
+
+			<h2>Result</h2>
+
+			<table id="result">
+
+				<tr>
+
+					<td id="r11"></td>
+
+					<td id="r12"></td>
+
+					<td id="r13"></td>
+
+				</tr>
+
+				<tr>
+
+					<td id="r21"></td>
+
+					<td id="r22"></td>
+
+					<td id="r23"></td>
+
+				</tr>
+
+				<tr>
+
+					<td id="r31"></td>
+
+					<td id="r32"></td>
+
+					<td id="r33"></td>
+
+				</tr>
+
+			</table>
+
+		</div>
+
+	</div>
+
+	<script>
+
+function addMatrices(matrix1, matrix2) {
+
+	let result = [];
+
+	for (let i = 0; i < matrix1.length; i++) {
+
+		result[i] = [];
+
+		for (let j = 0; j < matrix1[0].length; j++) {
+
+			result[i][j] = matrix1[i][j] + matrix2[i][j];
+
+		}
+
+	}
+
+	return result;
+
+}
+
+function subtractMatrices(matrix1, matrix2) {
+
+	let result = [];
+
+	for (let i = 0; i < matrix1.length; i++) {
+
+		result[i] = [];
+
+		for (let j = 0; j < matrix1[0].length; j++) {
+
+			result[i][j] = matrix1[i][j] - matrix2[i][j];
+
+		}
+
+	}
+
+	return result;
+
+}
+
+function multiplyMatrices(matrix1, matrix2) {
+
+	let result = [];
+
+	for (let i = 0; i < matrix1.length; i++) {
+
+		result[i] = [];
+
+		for (let j = 0; j < matrix2[0].length; j++) {
+
+			let sum = 0;
+
+			for (let k = 0; k < matrix2.length; k++) {
+
+				sum += matrix1[i][k] * matrix2[k][j];
+
+			}
+
+			result[i][j] = sum;
+
+		}
+
+	}
+
+	return result;
+
+}
+
+function invertMatrix(matrix) {
+
+	let n = matrix.length;
+
+	let identity = createIdentityMatrix(n);
+
+	let augmented = augmentMatrix(matrix, identity);
+
+	
+
+	for (let i = 0; i < n; i++) {
+
+		let pivot = augmented[i][i];
+
+		if (pivot === 0) {
+
+			return null;
+
+		}
+
+		for (let j = 0; j < 2 * n; j++) {
+
+			augmented[i][j] /= pivot;
+
+		}
+
+		for (let j = 0; j < n; j++) {
+
+			if (i === j) {
+
+				continue;
+
+			}
+
+			let factor = augmented[j][i];
+
+			for (let k = 0; k < 2 * n; k++) {
+
+				augmented[j][k] -= factor * augmented[i][k];
+
+			}
+
+		}
+
+	}
+
+	let inverse = [];
+
+	for (let i = 0; i < n; i++) {
+
+		inverse[i] = augmented.slice(n, 2 * n)[i];
+
+	}
+
+	return inverse;
+
+}
+
+function determinant(matrix) {
+
+	let n = matrix.length;
+
+	if (n === 1) {
+
+		return matrix[0][0];
+
+	}
+
+	if (n === 2) {
+
+		return matrix[0][0] * matrix[1][1] - matrix[0][1] * matrix[1][0];
+
+	}
+
+	let det = 0;
+
+	let sign = 1;
+
+	for (let i = 0; i < n; i++) {
+
+		let submatrix = [];
+
+		for (let j = 1; j < n; j++) {
+
+			submatrix[j-1] = matrix[j].slice(0,i).concat(matrix[j].slice(i+1));
+
+		}
+
+		det += sign * matrix[0][i] * determinant(submatrix);
+
+		sign *= -1;
+
+	}
+
+	return det;
+
+}
+
+</script>
+
+</body>
+
+</html>
 					
 
 			
