@@ -5,139 +5,19 @@
 					<
 			
 
-function 
-
-function multiplyMatrices(matrix1, matrix2) {
-
-	let result = [];
-
-	for (let i = 0; i < matrix1.length; i++) {
-
-		result[i] = [];
-
-		for (let j = 0; j < matrix2[0].length; j++) {
-
-			let sum = 0;
-
-			for (let k = 0; k < matrix2.length; k++) {
-
-				sum += matrix1[i][k] * matrix2[k][j];
-
-			}
-
-			result[i][j] = sum;
-
-		}
-
-	}
-
-	return result;
-
-}
-
-function invertMatrix(matrix) {
-
-	let n = matrix.length;
-
-	let identity = createIdentityMatrix(n);
-
-	let augmented = augmentMatrix(matrix, identity);
 
 	
 
-	for (let i = 0; i < n; i++) {
+	
 
-		let pivot = augmented[i][i];
+		let 
 
-		if (pivot === 0) {
+	
 
-			return null;
+	
 
-		}
 
-		for (let j = 0; j < 2 * n; j++) {
 
-			augmented[i][j] /= pivot;
+	
 
-		}
-
-		for (let j = 0; j < n; j++) {
-
-			if (i === j) {
-
-				continue;
-
-			}
-
-			let factor = augmented[j][i];
-
-			for (let k = 0; k < 2 * n; k++) {
-
-				augmented[j][k] -= factor * augmented[i][k];
-
-			}
-
-		}
-
-	}
-
-	let inverse = [];
-
-	for (let i = 0; i < n; i++) {
-
-		inverse[i] = augmented.slice(n, 2 * n)[i];
-
-	}
-
-	return inverse;
-
-}
-
-function determinant(matrix) {
-
-	let n = matrix.length;
-
-	if (n === 1) {
-
-		return matrix[0][0];
-
-	}
-
-	if (n === 2) {
-
-		return matrix[0][0] * matrix[1][1] - matrix[0][1] * matrix[1][0];
-
-	}
-
-	let det = 0;
-
-	let sign = 1;
-
-	for (let i = 0; i < n; i++) {
-
-		let submatrix = [];
-
-		for (let j = 1; j < n; j++) {
-
-			submatrix[j-1] = matrix[j].slice(0,i).concat(matrix[j].slice(i+1));
-
-		}
-
-		det += sign * matrix[0][i] * determinant(submatrix);
-
-		sign *= -1;
-
-	}
-
-	return det;
-
-}
-
-</script>
-
-</body>
-
-</html>
-					
-
-			
+	
